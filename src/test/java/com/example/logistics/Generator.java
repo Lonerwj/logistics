@@ -23,7 +23,7 @@ public class Generator {
     private static final String PACKAGE_NAME = "com.example.logistics";
 
     // 表名,多个表使用英文逗号分割
-    private static final String[] TBL_NAMES = {"confirm_order"};
+    private static final String[] TBL_NAMES = {"revenuecategory","permissions"};
 
     // 表名的前缀,从表生成代码时会去掉前缀
     private static final String TABLE_PREFIX = "tbl_";
