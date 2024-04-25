@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author lonerW
- * @since 2024-04-24 23:24:42
+ * @since 2024-04-25 15:41:16
  */
 @Mapper
 public interface CarsMapper extends BaseMapper<CarsEntity> {

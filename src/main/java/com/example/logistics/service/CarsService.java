@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author lonerW
- * @since 2024-04-24 23:24:42
+ * @since 2024-04-25 15:41:16
  */
 public interface CarsService extends IService<CarsEntity> {
 

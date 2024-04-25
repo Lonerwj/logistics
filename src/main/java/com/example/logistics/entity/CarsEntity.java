@@ -16,7 +16,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author lonerW
- * @since 2024-04-24 23:24:42
+ * @since 2024-04-25 15:41:16
  */
 @Getter
 @Setter
@@ -34,9 +34,11 @@ public class CarsEntity {
     @TableField("id_code")
     private String idCode;
 
+    @ApiModelProperty("0：启用，1：禁用")
     @TableField("car_state")
     private Integer carState;
 
+    @ApiModelProperty("0：未满载，1：满载")
     @TableField("load_state")
     private Integer loadState;
 
