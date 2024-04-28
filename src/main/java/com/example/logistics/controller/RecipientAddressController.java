@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2024-04-28 14:24:45
  */
 @RestController
-@RequestMapping("/order-service-entity")
-public class OrderServiceController {
+@RequestMapping("/recipient-address-entity")
+public class RecipientAddressController {
 
 }
 

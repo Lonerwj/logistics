@@ -1,6 +1,6 @@
 package com.example.logistics.mapper;
 
-import com.example.logistics.entity.OrderServiceEntity;
+import com.example.logistics.entity.RecipientAddressEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -13,6 +13,6 @@ import org.apache.ibatis.annotations.Mapper;
  * @since 2024-04-28 14:24:45
  */
 @Mapper
-public interface OrderServiceMapper extends BaseMapper<OrderServiceEntity> {
+public interface RecipientAddressMapper extends BaseMapper<RecipientAddressEntity> {
 
 }

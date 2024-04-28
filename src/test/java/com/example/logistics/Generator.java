@@ -15,15 +15,15 @@ import com.baomidou.mybatisplus.generator.keywords.MySqlKeyWordsHandler;
 // 代码自动生成器
 public class Generator {
     // 数据库连接字段配置
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/logistics?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&useSSl=true";
-    private static final String JDBC_USER_NAME = "root";
-    private static final String JDBC_PASSWORD = "123456";
+    private static final String JDBC_URL = "jdbc:mysql://rm-bp1u6g5344wi89444yo.mysql.rds.aliyuncs.com:3306/logistics?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&useSSl=true";
+    private static final String JDBC_USER_NAME = "test1";
+    private static final String JDBC_PASSWORD = "Zcxv461352";
 
     // 包名和模块名
     private static final String PACKAGE_NAME = "com.example.logistics";
 
     // 表名,多个表使用英文逗号分割
-    private static final String[] TBL_NAMES = {"cars"};
+    private static final String[] TBL_NAMES = {"sending_address"};
 
     // 表名的前缀,从表生成代码时会去掉前缀
     private static final String TABLE_PREFIX = "tbl_";

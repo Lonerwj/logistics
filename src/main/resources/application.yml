@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/logistics
-    username: root
-    password: 123456
+    url: jdbc:mysql://rm-bp1u6g5344wi89444yo.mysql.rds.aliyuncs.com:3306/logistics
+    username: test1
+    password: Zcxv461352
   data:
     redis:
       host: localhost

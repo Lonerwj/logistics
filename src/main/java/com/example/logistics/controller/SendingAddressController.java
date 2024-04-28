@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
  * </p>
  *
  * @author lonerW
- * @since 2024-04-28 14:24:45
+ * @since 2024-04-28 14:42:46
  */
 @RestController
-@RequestMapping("/order-service-entity")
-public class OrderServiceController {
+@RequestMapping("/sending-address-entity")
+public class SendingAddressController {
 
 }
 

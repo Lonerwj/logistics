@@ -38,8 +38,8 @@ public class WaybillsEntity {
     @TableField("departure")
     private Long departure;
 
-    @TableField("destinatin")
-    private Long destinatin;
+    @TableField("destination")
+    private Long destination;
 
     @TableField("depTime")
     private LocalDateTime depTime;
