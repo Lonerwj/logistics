@@ -35,8 +35,8 @@ public class FollowOrderEntity {
     private Integer orderId;
 
     @ApiModelProperty("所到分拣中心负责人")
-    @TableField("point_principalid")
-    private Integer pointPrincipalid;
+    @TableField("point_principal_id")
+    private Integer pointPrincipalId;
 
     @ApiModelProperty("所到分拣中心地址")
     @TableField("point_address")
@@ -47,19 +47,19 @@ public class FollowOrderEntity {
     private LocalDateTime pointTime;
 
     @ApiModelProperty("下一网点配送员")
-    @TableField("topoint_deliverymanid")
-    private Integer topointDeliverymanid;
+    @TableField("to_point_deliveryman_id")
+    private Integer toPointDeliverymanId;
 
     @ApiModelProperty("下一网点地址")
-    @TableField("topoint_address")
-    private String topointAddress;
+    @TableField("to_point_address")
+    private String toPointAddress;
 
     @ApiModelProperty("送货上门到达时间")
-    @TableField("tohome_time")
-    private LocalDateTime tohomeTime;
+    @TableField("to_home_time")
+    private LocalDateTime toHomeTime;
 
     @ApiModelProperty("运单状态(0:运输中，1已完成)")
     @TableField("state")
-    private LocalDateTime state;
+    private Integer state;
 
 }
