@@ -21,18 +21,25 @@ import lombok.experimental.Accessors;
 @Getter
 @Setter
 @Accessors(chain = true)
-@TableName("user_role")
-@ApiModel(value = "UserRoleEntity对象", description = "")
-public class UserRoleEntity {
+@TableName("city")
+@ApiModel(value = "CityEntity对象", description = "")
+public class CityEntity {
 
-    @TableId(value = "upId", type = IdType.AUTO)
-    private Long upId;
+    @ApiModelProperty("主键")
+    @TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
 
-    @TableField("roleId")
-    private Long roleId;
+    @ApiModelProperty("城市id")
+    @TableField("city_id")
+    private String cityId;
 
-    @TableField("userId")
-    private Long userId;
+    @ApiModelProperty("城市名")
+    @TableField("city")
+    private String city;
+
+    @ApiModelProperty("上级省级id")
+    @TableField("father")
+    private String father;
 
 
 }

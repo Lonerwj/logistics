@@ -48,5 +48,13 @@ public class CarsEntity {
     @TableField("load_num")
     private Integer loadNum;
 
+    @ApiModelProperty("车辆位置")
+    @TableField("location")
+    private Integer location;
+
+    @ApiModelProperty("定位")
+    @TableField("position")
+    private String position;
+
 
 }

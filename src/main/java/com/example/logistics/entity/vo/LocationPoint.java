@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class LocationPoint {
 
-    private String lat; //纬度
     private String lng; //经度
+    private String lat; //纬度
+
 }

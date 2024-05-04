@@ -58,7 +58,7 @@ public class FollowOrderEntity {
     @TableField("to_home_time")
     private LocalDateTime toHomeTime;
 
-    @ApiModelProperty("运单状态(0:运输中，1已完成)")
+    @ApiModelProperty("运单状态(0：未运输，1，运输中，2：已完成)")
     @TableField("state")
     private Integer state;
 

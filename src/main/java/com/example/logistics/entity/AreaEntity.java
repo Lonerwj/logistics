@@ -1,8 +1,6 @@
 package com.example.logistics.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -21,18 +19,25 @@ import lombok.experimental.Accessors;
 @Getter
 @Setter
 @Accessors(chain = true)
-@TableName("user_role")
-@ApiModel(value = "UserRoleEntity对象", description = "")
-public class UserRoleEntity {
+@TableName("area")
+@ApiModel(value = "AreaEntity对象", description = "")
+public class AreaEntity {
 
-    @TableId(value = "upId", type = IdType.AUTO)
-    private Long upId;
+    @ApiModelProperty("主键")
+    @TableField("id")
+    private Integer id;
 
-    @TableField("roleId")
-    private Long roleId;
+    @ApiModelProperty("区县id")
+    @TableField("area_id")
+    private String areaId;
 
-    @TableField("userId")
-    private Long userId;
+    @ApiModelProperty("区县名")
+    @TableField("area")
+    private String area;
+
+    @ApiModelProperty("上级城市id")
+    @TableField("father")
+    private String father;
 
 
 }

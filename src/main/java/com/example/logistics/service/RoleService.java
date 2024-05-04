@@ -1,6 +1,6 @@
 package com.example.logistics.service;
 
-import com.example.logistics.entity.UserRoleEntity;
+import com.example.logistics.entity.RoleEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author lonerW
  * @since 2024-05-04 18:46:14
  */
-public interface UserRoleService extends IService<UserRoleEntity> {
+public interface RoleService extends IService<RoleEntity> {
 
 }

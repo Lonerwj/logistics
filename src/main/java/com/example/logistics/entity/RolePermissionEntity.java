@@ -21,18 +21,18 @@ import lombok.experimental.Accessors;
 @Getter
 @Setter
 @Accessors(chain = true)
-@TableName("user_role")
-@ApiModel(value = "UserRoleEntity对象", description = "")
-public class UserRoleEntity {
+@TableName("role_permission")
+@ApiModel(value = "RolePermissionEntity对象", description = "")
+public class RolePermissionEntity {
 
-    @TableId(value = "upId", type = IdType.AUTO)
-    private Long upId;
+    @TableId(value = "rpId", type = IdType.AUTO)
+    private Long rpId;
 
     @TableField("roleId")
     private Long roleId;
 
-    @TableField("userId")
-    private Long userId;
+    @TableField("perId")
+    private Long perId;
 
 
 }

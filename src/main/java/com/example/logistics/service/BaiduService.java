@@ -57,6 +57,31 @@ public class BaiduService {
         });
     }
 
+//    public LocationPoint getPosition(){
+//        String url = this.baiduConfig.getWebUrl() + "location/ip?";
+//        Map<String, Object> param = MapUtil.builder(new HashMap<String, Object>())
+//                .put("coor", "bd09ll").build();
+//        return this.baiduApiService.execute(url, Method.GET, param, response -> {
+//            if (response.isOk()) {
+//                String jsonData = response.body();
+//                JSONObject jsonObject = JSONUtil.parseObj(jsonData);
+//                System.out.println(jsonObject);
+//                if (jsonObject.getInt("status") != 0) {
+//                    //出错了
+//                    System.out.println("error");
+//                    return null;
+//                }
+//
+//                JSONObject location = jsonObject.getJSONObject("content").getJSONObject("point");
+//                LocationPoint locationPoint = new LocationPoint();
+//                locationPoint.setLat(String.valueOf(location.getDouble("y")));
+//                locationPoint.setLng(String.valueOf(location.getDouble("x")));
+//                return locationPoint;
+//            }
+//            return null;
+//        });
+//    }
+
     public List<LocationPoint> queryTrackRoute(double[] senderLocationPoint,
                                                double[] receiverLocationPoint,
                                                String wayPoints) {
